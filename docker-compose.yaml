@@ -2,10 +2,7 @@ version: "3.9"
 
 services:
   api01: &api
-    # Lembre-se de que seu serviço HTTP deve estar hospedado num repositório
-    # publicamente acessível! Ex.: hub.docker.com
-    build:
-      context: .
+    image: meopedevts/go-francisco:1.0
     hostname: api01
     restart: unless-stopped
     depends_on:
